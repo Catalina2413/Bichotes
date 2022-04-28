@@ -25,3 +25,127 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>publicacion de noticia</title>
+    <link rel="stylesheet" a href="Style3.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <p><h1>Publicación de noticia</h1></p>
+            <div class="form-check">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Seleccione si desea publicar la noticia</legend>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          Si
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                          No
+                        </label>
+                      </div>
+                </div>
+                <p><h5>En caso de no publicar seleccione los motivos</h5></p>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Mala redacción</label><br>
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Faltas ortográficas</label><br>
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Imagen de mala calidad</label><br>
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">falta de información</label><br>
+                </div>
+                
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                Estoy de acuerdo con los términos y condiciones
+                </label>
+            </div>
+            
+                <div><p></p></div>
+                <div><a class="btn btn-primary" href="##paginaprincipal">Enviar</a></div>
+        </script>        
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style2.css">
+    <title>Ingrese noticia a reportar</title>
+</head>
+<body>
+       <!--Botón de regresar-->
+       <a href="file:///C:/Users/flore/OneDrive/Escritorio/Evaluacion_Prog_web/periodistas.html">Volver</a>
+
+    <p><h2>Formulario de ingreso de noticia</H2></p>
+    <p><h5>Categoría</h5></p>
+    <form action="" name="F1" method="post">
+        <select id="mySelect">
+            <option>--</option>
+            <option>Nacional</option>
+            <option>Internacional</option>
+            <option>Reportajes</option>
+            <option>Cazanoticias</option>
+            <option>Economía</option>
+            <option>Deportes</option>
+            <option>Espectáculo</option>
+        </select>
+    </form><br>
+    <div><textarea name="noticia" rows="20" cols="80">Ingrese aquí redacción de la noticia</textarea></div>
+    <p><h5>Subir archivo en formato png, jpg o pdf</h5></p>
+    <form enctype="multipart/form-data" action="uploader.php" method="POST">
+        <input name="uploadedfile" type="file" />
+    </form><br>
+
+    <form action="" name="Enviar" method="post">
+        <input type="button" name="Enviar a administradores" value="Enviar">
+    </form>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Inicio Sesión</title>
+</head>
+<body>
+    <!--Botón de regresar-->
+    <a href="#">Volver</a>
+
+    <!--  Inicio sesión de los periodistas -->
+    <section class="form-login">
+        <h5>Inicio Sesión</h5>
+        Email: <input class="controls" type="email" type="text"><br>
+        Password: <input class="controls" type="password" type="text" name="" id=""><br>
+        <!--<input class="buttons" type="submit" name="Ingresar" value="Ingresar"><br>-->
+        <p><a href="file:///C:/Users/flore/OneDrive/Escritorio/Evaluacion_Prog_web/index.html" class="buttons" type="Ingresar"><h3>Ingresar</h3> </a></p> <br>
+        <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+    </section>
+    
+
+
+</body>
+</html>
